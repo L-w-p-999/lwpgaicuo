@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let nums=[0,1,0,3,12]
+//let nums2=[0,0,1,1,1]
+
+let sum=0
+function removeZero(x){
+    for(j=0;j<x.length;j++){
+        if(x[j]===0){
+             x.splice(j,1)
+             j--//改动
+             sum+=1
+             
+        }
+    }
+    
+    for(let i=0;i<sum;i++){
+        x.push(0)
+    }
+    
+return x
+}
+//console.log(removeZero(nums))
+console.log(removeZero(nums))
+
+    </script>
+</body>
+</html>
